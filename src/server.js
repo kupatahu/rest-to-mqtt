@@ -9,7 +9,7 @@ const start = async () => {
   fastify.register(route)
 
   try {
-    await fastify.listen({ port: 7000 })
+    await fastify.listen({ host: '0.0.0.0', port: 7000 })
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
