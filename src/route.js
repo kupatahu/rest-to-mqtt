@@ -1,6 +1,6 @@
 const route = (fastify, opts) => {
     fastify.post('/messages', (request, reply) => {
-        fastify.mqtt.publish(request.body.topic, request.body.message)
+        fastify.mqtt.publish(request.body.topic, request.body.message, { retain: true })
         reply.code(201).send()
     })
 }
