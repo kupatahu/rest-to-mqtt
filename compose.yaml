@@ -1,0 +1,9 @@
+services:
+  resttomqtt:
+    build:
+      context: .
+    container_name: resttomqtt
+    environment:
+      NODE_ENV: production
+    network_mode: host
+
