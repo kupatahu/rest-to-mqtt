@@ -2,6 +2,7 @@ services:
   resttomqtt:
     build:
       context: .
+    image: kupatahu/rest-to-mqtt
     container_name: resttomqtt
     environment:
       NODE_ENV: production
