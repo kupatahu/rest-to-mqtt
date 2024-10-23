@@ -6,5 +6,10 @@ services:
     container_name: resttomqtt
     environment:
       NODE_ENV: production
+      MQTT_HOST: "192.168.68.68"
+      MQTT_PORT: 1883
+      MQTT_USERNAME: "user"
+      MQTT_PASSWORD: "ivegot99problemsL"
+      MQTT_KEEPALIVE: 60
     network_mode: host
 
